@@ -57,7 +57,11 @@ plugins=(git bundler zsh-syntax-highlighting)
 
 # User configuration
 
-export PATH="/usr/local/heroku/bin:/Users/CodeDiablos/Android/android-ndk-r9/tools:/Users/CodeDiablos/mycmd:/Users/CodeDiablos/autorepo:/Users/CodeDiablos/bin:/usr/lib/jvm/jdk1.6.0_38//bin:/usr/lib/jvm/jdk1.6.0_38//jre/bin:/Users/CodeDiablos/Android/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export XCTEST="/Applications/Xcode.app/Contents/Developer/usr/bin"
+export ANDROID_TOOLS="$HOME/Library/Android/sdk/platform-tools"
+
+#export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$PATH:$XCTEST:$ANDROID_TOOLS"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
