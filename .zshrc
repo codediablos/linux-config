@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/CodeDiablos/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 export EDITOR=emacs
+export TERM="xterm-256color"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -9,6 +10,7 @@ export EDITOR=emacs
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="agnoster"
 ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_MODE='awesome-fontconfig'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -90,5 +92,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias ll='ls -alF'
+alias emacs='emacs -nw'
 alias ec='emacsclient -t'
 alias swift='swift -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks'
