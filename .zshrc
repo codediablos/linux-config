@@ -9,8 +9,10 @@ export TERM="xterm-256color"
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="agnoster"
-ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_MODE='awesome-fontconfig'
+ZSH_THEME="pure"
+
+#ZSH_THEME="powerlevel9k/powerlevel9k"
+#POWERLEVEL9K_MODE='awesome-patched'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -67,6 +69,7 @@ export PATH="$PATH:$XCTEST:$ANDROID_TOOLS"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/linux-config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
