@@ -2,7 +2,6 @@
 export ZSH=$HOME/.oh-my-zsh
 export EDITOR=emacs
 export TERM="xterm-256color"
-export PROMPT_COMMAND="history -a; history -n"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -101,3 +100,8 @@ alias ll='ls -alF'
 alias emacs='emacs -nw'
 alias ec='emacsclient -t'
 alias swift='swift -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks'
+
+setopt no_share_history
+unsetopt share_history
+
+if [ "$TMUX" = "" ]; then tmux; fi
